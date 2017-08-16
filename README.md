@@ -1,2 +1,2 @@
 # eagles-subreddit
-Repo for r/eagles sub-reddit theme
+Repo for [r/eagles](https://www.reddit.com/r/eagles/) sub-reddit theme
