@@ -15,9 +15,15 @@ $spacing-none: 0;
 
 
 /* text colors */
+
+$color-text-link: $color-eagles-active-green; // $color-picton-blue;
 $color-text-link-inverse: $color-white;
-$color-text-link: $color-picton-blue;
 $color-background-primary: $color-eagles-cyprus-green;
+
+$color-background-active: $color-eagles-active-green-dark;
+$color-background-hover: $color-eagles-active-green;
+$color-background-focus: $color-eagles-active-green-light;
+
 
 *, :after, :before {
   -webkit-box-sizing: border-box;
@@ -145,7 +151,7 @@ body {
   .btn, button {
     margin: 4px 16px 4px $spacing-none;
     padding: $spacing-none 16px;
-    background: $color-lochmara-blue;
+    background: $color-background-active;
     border: none;
     border-radius: 2px;
     color: $color-white;
@@ -162,13 +168,13 @@ body {
 
 .btn:hover, .c-btn-primary:hover, .wiki-page .wiki-page-content .wiki_button, button:hover {
   color: $color-white;
-  background: $color-curious-blue;
+  background: $color-background-hover;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active, .c-btn-primary:active, .wiki-page .wiki-page-content .wiki_button, button:active {
   color: $color-white;
-  background: $color-endeavour-blue;
+  background: $color-background-focus;
   box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -709,18 +715,18 @@ body {
 }
 
 body .content .sitetable .link .title a:hover {
-  color: $color-picton-blue;
+  color: $color-background-hover;
 }
 
 .thing .title {
-  color: $color-picton-blue;
+  color: $color-text-link;
   &.click {
-    color: $color-picton-blue;
+    color: $color-text-link;
   }
   &.loggedin {
-    color: $color-picton-blue;
+    color: $color-text-link;
     &.click {
-      color: $color-picton-blue;
+      color: $color-text-link;
     }
   }
 }
@@ -746,7 +752,7 @@ body .content .sitetable .link .title a:hover {
     color: $color-gull-gray;
     transition: all $duration-semi-quickly ease;
     &:hover {
-      color: $color-picton-blue;
+      color: $color-background-active;
       text-decoration: none;
     }
   }
@@ -783,8 +789,8 @@ body .content .sitetable .link .title a:hover {
     cursor: pointer;
   }
   &:hover {
-    background-color: $color-lochmara-blue;
-    border-color: $color-lochmara-blue;
+    background-color: $color-background-active;
+    border-color: $color-background-active;
   }
   &.selftext {
     &.collapsed {
@@ -906,7 +912,7 @@ body .content .sitetable .link .title a:hover {
   }
   a {
     &:hover {
-      color: $color-picton-blue;
+      color: $color-text-link; // $color-picton-blue;
       text-decoration: none;
     }
     &.author {
@@ -1357,7 +1363,7 @@ body > .content .link.compressed .midcol {
   a.title {
     font-size: 18px !important;
     opacity: 100 !important;
-    color: $color-picton-blue !important;
+    color: $color-background-active !important;
   }
 }
 
@@ -1375,7 +1381,7 @@ body > .content .link.compressed .midcol {
       .linkflair a.title {
         font-size: 18px !important;
         opacity: 100 !important;
-        color: $color-picton-blue !important;
+        color: $color-background-active !important;
         cursor: default;
       }
       .flairremove {
@@ -1386,7 +1392,7 @@ body > .content .link.compressed .midcol {
         a {
           visibility: visible;
           opacity: 100 !important;
-          color: $color-picton-blue !important;
+          color: $color-background-active !important;
           margin-left: -4px;
           text-transform: capitalize;
           &:first-letter {
@@ -1543,8 +1549,8 @@ div {
   line-height: 0.8;
   .toggleOn {
     border-radius: 0;
-    border: 1px solid $color-picton-blue;
-    background-color: $color-picton-blue;
+    border: 1px solid $color-background-active;
+    background-color: $color-background-active;
     color: $color-white;
     text-transform: capitalize;
   }
@@ -1582,7 +1588,7 @@ div {
     content: " ▼";
   }
   &:hover {
-    color: $color-picton-blue;
+    color: $color-background-active;
   }
 }
 
@@ -1644,7 +1650,7 @@ div {
   padding: 8px 16px;
   line-height: 26px;
   border: none;
-  background-color: $color-lochmara-blue;
+  background-color: $color-background-active;
   color: $color-white;
   border-radius: 2px;
 }
@@ -1974,7 +1980,7 @@ div.titlebox span.number:after {
 }
 
 .morelink {
-  background: $color-lochmara-blue;
+  background: $color-background-active;
   height: 36px;
   border-radius: 2px;
   font-size: 14px;
@@ -1985,10 +1991,10 @@ div.titlebox span.number:after {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition: box-shadow $duration-promptly cubic-bezier(0.4, 0, 1, 1), background $duration-promptly cubic-bezier(0.4, 0, 0.2, 1), color $duration-promptly cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background: $color-curious-blue;
+    background: $color-background-hover;
   }
   &:active {
-    background: $color-endeavour-blue;
+    background: $color-background-focus;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   }
 }
@@ -2170,7 +2176,7 @@ div.titlebox span.number:after {
         padding: $spacing-none 16px;
         width: 100%;
         border-radius: 2px;
-        background: $color-lochmara-blue;
+        background: $color-background-active;
         font: 12px/42px Lato,Arial,sans-serif;
         color: $color-white;
         display: block;
@@ -2179,11 +2185,11 @@ div.titlebox span.number:after {
         box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
         transition: box-shadow $duration-promptly cubic-bezier(0.4, 0, 1, 1), background $duration-promptly cubic-bezier(0.4, 0, 0.2, 1), color $duration-promptly cubic-bezier(0.4, 0, 0.2, 1);
         &:hover {
-          background: $color-curious-blue;
+          background: $color-background-hover;
           box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
         }
         &:active {
-          background: $color-endeavour-blue;
+          background: $color-background-focus;
           box-shadow: 0 2px 1.5px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.12);
         }
       }
@@ -2339,12 +2345,12 @@ div.titlebox span.number:after {
 }
 
 .commentarea .menuarea .toggle a:hover {
-  color: $color-picton-blue;
+  color: $color-background-hover;
 }
 
 .help-hoverable {
   &:hover {
-    color: $color-picton-blue;
+    color: $color-background-hover;
   }
   font-size: x-small;
 }
@@ -2842,11 +2848,11 @@ div.titlebox span.number:after {
     font-weight: 400;
     font-size: 10px;
     &:hover {
-      color: $color-picton-blue;
+      color: $color-background-hover;
       text-decoration: none;
     }
     &[onclick*="reply"] {
-      color: $color-picton-blue;
+      color: $color-background-active;
       font-weight: 700;
       font-size: 11px;
     }
@@ -2854,7 +2860,7 @@ div.titlebox span.number:after {
 }
 
 .deepthread a {
-  color: $color-picton-blue;
+  color: $color-background-active;
 }
 
 .morecomments a {
@@ -4348,9 +4354,3 @@ body {
     opacity: 0;
   }
 }
-
-
-/*
-    End of Naut
-    Add your customizations and addons below!
--------------------------------------------------------------------------- */
