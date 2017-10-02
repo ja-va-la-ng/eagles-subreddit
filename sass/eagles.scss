@@ -451,6 +451,8 @@ body:not(.loggedin) #header-bottom-right {
 }
 
 #header-img {
+  display:none;
+  /*
   z-index: 99;
   width: 0;
   padding-left: 42px;
@@ -459,7 +461,10 @@ body:not(.loggedin) #header-bottom-right {
   margin: $spacing-none 8px $spacing-none $spacing-none;
   vertical-align: top;
   font-size: 0;
+  */
   &.default-header {
+    display:none;
+    /*
     z-index: 99;
     width: 0;
     padding-left: 42px;
@@ -471,10 +476,13 @@ body:not(.loggedin) #header-bottom-right {
     &:hover {
       background-position: -122px 0;
     }
+    */
   }
+  /*
   &:hover {
     background-position: -122px 0;
   }
+  */
 }
 
 #header .pagename {
@@ -483,14 +491,14 @@ body:not(.loggedin) #header-bottom-right {
     display: inline-block;
     line-height: 42px;
     color: $color-white;
-    font: normal 700 42px/42px Lato,Arial,sans-serif;
+    font: normal 700 24px/24px Lato,Arial,sans-serif;
     text-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
   }
 }
 
 #header-bottom-left {
   position: absolute;
-  top: 100px;
+  bottom: 10px;
   left: 16px;
   right: 384px;
 }
