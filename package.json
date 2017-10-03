@@ -1,0 +1,24 @@
+{
+  "name": "eagles-subreddit",
+  "version": "1.0.0",
+  "description": "Repo for [r/eagles](https://www.reddit.com/r/eagles/) sub-reddit theme",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ja-va-la-ng/eagles-subreddit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ja-va-la-ng/eagles-subreddit/issues"
+  },
+  "homepage": "https://github.com/ja-va-la-ng/eagles-subreddit#readme"
+}

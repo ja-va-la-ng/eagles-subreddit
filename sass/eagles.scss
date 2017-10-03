@@ -1,5 +1,5 @@
 
-@import "colors.scss";
+@import "includes/colors.scss";
 
 
 /* transition values  */
@@ -452,37 +452,9 @@ body:not(.loggedin) #header-bottom-right {
 
 #header-img {
   display:none;
-  /*
-  z-index: 99;
-  width: 0;
-  padding-left: 42px;
-  height: 42px;
-  background: url("%%spritesheet%%") -80px 0;
-  margin: $spacing-none 8px $spacing-none $spacing-none;
-  vertical-align: top;
-  font-size: 0;
-  */
   &.default-header {
     display:none;
-    /*
-    z-index: 99;
-    width: 0;
-    padding-left: 42px;
-    height: 42px;
-    background: url("%%spritesheet%%") -80px 0;
-    margin: $spacing-none 8px $spacing-none $spacing-none;
-    vertical-align: top;
-    font-size: 0;
-    &:hover {
-      background-position: -122px 0;
-    }
-    */
   }
-  /*
-  &:hover {
-    background-position: -122px 0;
-  }
-  */
 }
 
 #header .pagename {
@@ -501,6 +473,7 @@ body:not(.loggedin) #header-bottom-right {
   bottom: 10px;
   left: 16px;
   right: 384px;
+  height:42px;
 }
 
 #header .tabmenu {
@@ -509,6 +482,8 @@ body:not(.loggedin) #header-bottom-right {
   height: 42px;
   line-height: 42px;
   border: none;
+  position: relative;
+  bottom: 17px;
   &:before {
     content: "";
     display: block;
@@ -1819,7 +1794,7 @@ div.titlebox span.word {
 }
 
 div.titlebox span.number:after {
-  content: " readers";
+  content: " Eagles";
 }
 
 .titlebox {
@@ -1834,7 +1809,7 @@ div.titlebox span.number:after {
       background: url("%%spritesheet%%") -64px -36px;
     }
     &:after {
-      content: " currently online";
+      content: " in the Nest";
     }
   }
   .word {
@@ -2164,6 +2139,33 @@ div.titlebox span.number:after {
   }
 }
 
+/* --------------
+    Post markdown stuff
+----------------- */
+.md a, .md a:active{
+  color: $color-eagles-active-green !important;
+}
+.md a:visited{
+  color: $color-eagles-active-green-light !important;
+}
+.md a:hover{
+  color: $color-eagles-cyprus-green !important;
+}
+.md table{
+  width: 100%;
+  /* display: block; */
+  /* table-layout: fixed; */
+  /* overflow-x: auto; */
+  /* white-space: nowrap; */
+  font-size:1em;
+}
+.md table th{
+  background: $color-eagles-silver-gray-light;
+}
+.md table tr:nth-child(odd) {
+  background: $color-eagles-silver-gray-lighter;
+}
+
 .side {
   .md {
     .-blocks, .-lists, blockquote, ol, p, pre, table, ul {
@@ -2285,19 +2287,6 @@ div.titlebox span.number:after {
 .account-activity-box a {
   text-transform: uppercase;
 }
-
-/*.side:after {
-  display: block;
-  margin: $spacing-none;
-  padding: 10px $spacing-none;
-  color: $color-picton-blue;
-  content: "This subreddit uses the /r/Naut theme.";
-  font: 16px Lato,Arial,sans-serif;
-  position: absolute;
-  width: 320px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  text-align: center;
-}*/
 
 .commentarea {
   display: -ms-flexbox;
@@ -3595,32 +3584,6 @@ ul.image-preview-list {
   background-color: transparent;
 }
 
-/*
-.stylesheet-customize-container {
-  &:before {
-    position: fixed;
-    width: 100%;
-    padding: 16px;
-    color: $color-white;
-    left: 0;
-    bottom: 0;
-    background: $color-shark-gray;
-    content: "Hey! There's an FAQ if you just scroll down a little.";
-    font-size: 18px;
-    z-index: 100;
-  }
-  &:after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 800px;
-    z-index: 100;
-    margin-top: 40px;
-    background: url("%%faq%%") 50% 50% no-repeat;
-  }
-}
-*/
-
 .flair {
   border: none;
   border-radius: 0;
@@ -4361,4 +4324,40 @@ body {
     -webkit-transform: scale(1.5, 1.5);
     opacity: 0;
   }
+}
+
+@import 'includes/flair.scss';
+
+.pagename a{
+ display:block;
+ height:170px;
+ position:absolute;
+ top:-132px;
+ left:50%;
+ width:236px;
+ z-index:2;
+ font-size:0px;
+margin-left:98px;
+ background-image:url(%%EagleHeader%%);
+-moz-transition:background-image 0.2s ease-in-out;
+-o-transition:background-image 0.2s ease-in-out;
+-ms-transition:background-image 0.2s ease-in-out;
+-webkit-transition:background-image 0.2s ease-in-out;
+transition:background-image 0.2s ease-in-out}
+/*.pagename a:hover{
+opacity:0.5;
+    transition:opacity 0.3s;
+center center no-repeat
+}*/
+
+.pagename a:hover{
+background-image:url(%%EagleHeaderHover%%);
+-moz-transition:background-image 0.2s ease-in-out;
+-o-transition:background-image 0.2s ease-in-out;
+-ms-transition:background-image 0.2s ease-in-out;
+-webkit-transition:background-image 0.2s ease-in-out;
+transition:background-image 0.2s ease-in-out}
+
+.pagename a{
+  color: transparent !important;
 }
