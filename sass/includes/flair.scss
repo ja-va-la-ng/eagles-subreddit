@@ -917,3 +917,41 @@ a[href="/r/redskins"]:before{background-position:0 -620px}
  margin:0 1px;
  padding-left:10px}
 /* --- End NFL links --- */
+
+/* Link flair
+------------------------------------- */
+.linkflair .linkflairlabel{
+ max-width:none;
+ margin-right:8px;
+ border-radius:2px !important;
+ vertical-align:text-top;
+ color:#FFF;
+ vertical-align:middle !important;
+ padding:1px 4px;
+ text-align:center}
+
+.linkflair-Blue .linkflairlabel{background:$color-picton-blue}
+
+.linkflair-Red .linkflairlabel{background:$color-pomegranate-red}
+
+.linkflair-Midnight .linkflairlabel{background:$color-eagles-cyprus-green}
+
+.linkflair-Brown .linkflairlabel{background:#663300}
+
+.linkflair-Grey .linkflairlabel{background:$color-silver-chalice-gray}
+
+.linkflair-Aqua .linkflairlabel{background:#0dbdb7}
+
+.linkflair-GrayGreen .linkflairlabel{background:$color-eagles-active-green}
+
+.linkflair-Yellow .linkflairlabel{background:$color-mustard-yellow;color: $color-tundora-gray}
+
+.linkflair-Orange .linkflairlabel{background:#F5990F}
+
+.linkflair-Pink .linkflairlabel{background:$color-geraldine-red}
+
+.linkflair-Kelly .linkflairlabel{background:$color-fruit-salad-green}
+
+.linkflair-Purple .linkflairlabel{background:$color-trendy-purple}
+
+.linkflair-Charcoal .linkflairlabel{background:$color-tundora-gray}
