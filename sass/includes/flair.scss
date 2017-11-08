@@ -955,3 +955,39 @@ a[href="/r/redskins"]:before{background-position:0 -620px}
 .linkflair-Purple .linkflairlabel{background:$color-trendy-purple}
 
 .linkflair-Charcoal .linkflairlabel{background:$color-tundora-gray}
+
+/* --- Verified Accounts --- */
+.author[href$="/EvanMathis69"] ~ .flair:after{
+    content:'Verified Account';
+    background:#003b48;
+    color:#fff;
+    margin-left:.3em;
+   -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    font-weight:bold;
+    padding:2px 4px
+}
+
+.author[href$="/PhiladelphiaEagles"] ~ .flair:after{
+    content:'Verified Account';
+    background:#003b48;
+    color:#fff;
+    margin-left:.3em;
+   -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    font-weight:bold;
+    padding:2px 4px
+}
+
+.author[href$="/JimmyKempski"] ~ .flair:after{
+ content:'Verified Account';
+ background:#003b48;
+ color:#fff;
+ margin-left:.3em;
+ -moz-border-radius:4px;
+ -webkit-border-radius:4px;
+ font-weight:bold;
+ padding:2px 4px
+}
+
+/* --- End Verified Accounts --- */
